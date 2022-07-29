@@ -1,0 +1,39 @@
+.section {
+  max-width: 600px;
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: antiquewhite;
+}
+.heading {
+  text-align: center;
+  font-size: 34px;
+}
+.text {
+  padding: 0 20px;
+  text-align: center;
+}
+.labelform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+.input {
+  width: 50%;
+  padding: 0.7em;
+  margin: 10px;
+}
+.submit {
+  font-size: 1rem;
+  padding: 10px 60px;
+  margin: 20px auto;
+  background-color: green;
+  color: white;
+}
+.invalid {
+  border-color: red;
+  color: red;
+}

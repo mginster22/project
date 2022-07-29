@@ -1,0 +1,25 @@
+.form {
+  max-width: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  gap: 1em;
+}
+.input {
+  padding: 1em;
+  width: 50%;
+}
+.submit {
+  background-color: teal;
+  cursor: pointer;
+  width: 30%;
+}
+.valid {
+  border: green;
+}
+.invalid {
+  border-color: red;
+  color: red;
+}
