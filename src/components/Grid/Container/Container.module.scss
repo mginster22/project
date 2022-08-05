@@ -1,0 +1,12 @@
+.wrap{
+  width: 90%;
+  margin: auto;
+  @media screen and (min-width:600px){
+    max-width: 500px;
+    background-color: aqua;
+  }
+  @media screen and (min-width:300px){
+    max-width: 400px;
+    background-color: teal;
+  }
+}

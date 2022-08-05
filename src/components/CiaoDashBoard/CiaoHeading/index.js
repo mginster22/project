@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 
 const CiaoHeading = (props) => {
   const { content, title, className } = props;
@@ -7,6 +8,14 @@ const CiaoHeading = (props) => {
       {content}
     </h1>
   );
+};
+
+CiaoHeading.defaultProps = {
+  content: "asdsadas",
+};
+
+CiaoHeading.propTypes = {
+  content: PropTypes.string,
 };
 
 export default CiaoHeading;

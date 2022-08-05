@@ -1,14 +1,13 @@
-import React from "react";
+import React, { Children } from "react";
 import "./App.css";
-import UserCard from "./components/UserCard/index";
+import UsersLoader from "./components/UsersLoader";
 
 const App = (props) => {
-  const user = {
-    id: 1,
-    fname: "VLad",
-    lname: "Korochanskiy",
-  };
-  return <UserCard user={user} setIsSelected={() => {}} />;
+  return (
+    <>
+      <UsersLoader />
+    </>
+  );
 };
 
 export default App;

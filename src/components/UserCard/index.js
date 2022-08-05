@@ -8,6 +8,7 @@ const UserCard = (props) => {
     setIsSelected,
   } = props;
   const styles = { backgroundColor: isSelected ? "teal" : "pink" };
+  const handlerBtn = () => setIsSelected(id);
 
   return (
     <article style={styles}>
@@ -16,12 +17,20 @@ const UserCard = (props) => {
         {fname}
         {lname}
       </h3>
-      <button onClick={() => setIsSelected(id)}>Select this User</button>
+      <button onClick={handlerBtn}>Select this User</button>
     </article>
   );
 };
+
+export const userPropType = PropTypes.shape({
+  id: PropTypes.number,
+  fname: PropTypes.string,
+  lname: PropTypes.string,
+  isSelected: PropTypes.bool,
+});
+
 UserCard.propTypes = {
-  user: PropTypes.object,
-  setIsSelected: PropTypes.func,
+  user: userPropType,
+  setIsSelected: PropTypes.func.isRequired,
 };
 export default UserCard;

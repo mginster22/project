@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 
 const CiaoSortedList = (props) => {
   const { sortById, sortByLname, isUpSortById, isUpSortByLname } = props;
@@ -13,6 +14,13 @@ const CiaoSortedList = (props) => {
       </button>
     </>
   );
+};
+
+CiaoSortedList.propTypes = {
+  sortById: PropTypes.func,
+  sortByLname: PropTypes.func,
+  isUpSortById: PropTypes.bool,
+  isUpSortByLname: PropTypes.bool,
 };
 
 export default CiaoSortedList;

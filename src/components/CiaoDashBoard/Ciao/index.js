@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class Ciao extends Component {
@@ -32,9 +32,16 @@ class Ciao extends Component {
     );
   }
 }
+
+Ciao.defaultProps = {
+  id: 0,
+  fname: "Noname",
+  lname: "Noname",
+};
+
 Ciao.propTypes = {
-  id: PropTypes.number.isRequired,
   fname: PropTypes.string.isRequired,
-  sname: PropTypes.string.isRequired,
+  lname: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 export default Ciao;
