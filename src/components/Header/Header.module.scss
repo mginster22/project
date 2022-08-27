@@ -1,0 +1,11 @@
+@import "../../common/style/temlate";
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.light{
+  @extend %light
+}
+.dark{
+  @extend %dark
+}

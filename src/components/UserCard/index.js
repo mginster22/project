@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { PropTypes } from "prop-types";
+import { UserContext } from "../../contexts";
 
 const UserCard = (props) => {
-  const {
-    user: { id, fname, lname, isSelected },
-
-    setIsSelected,
-  } = props;
+  const [user, setUser] = useContext(UserContext);
+  const { fname, lname, id, isSelected } = user;
+  console.log(user);
   const styles = { backgroundColor: isSelected ? "teal" : "pink" };
-  const handlerBtn = () => setIsSelected(id);
+  const handlerBtn = () => setUser({ ...user, isSelected: !isSelected });
 
   return (
     <article style={styles}>
@@ -22,15 +21,4 @@ const UserCard = (props) => {
   );
 };
 
-export const userPropType = PropTypes.shape({
-  id: PropTypes.number,
-  fname: PropTypes.string,
-  lname: PropTypes.string,
-  isSelected: PropTypes.bool,
-});
-
-UserCard.propTypes = {
-  user: userPropType,
-  setIsSelected: PropTypes.func.isRequired,
-};
 export default UserCard;

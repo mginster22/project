@@ -1,0 +1,26 @@
+const config = {
+  API_BASE: "https://randomuser.me/api/",
+  API_KEY: "foot",
+  DEFAULT_AMOUNT: 5,
+  DEFAULT_AMOUNTS: [5, 10, 15],
+  DEFAULT_NUT: "AU",
+  DEFAULT_SELECT_NAT: [
+    "AU",
+    "BR",
+    "CA",
+    "CH",
+    "DE",
+    "DK",
+    "ES",
+    "FI",
+    "FR",
+    "GB",
+    "IE",
+    "IR",
+    "NL",
+    "NZ",
+    "TR",
+    "US",
+  ],
+};
+export default config;

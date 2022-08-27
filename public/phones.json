@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "name":"apple",
+    "price":"1000$"
+  },
+  {
+    "id":2,
+    "name":"sams",
+    "price":"1022$"
+  },
+  {
+    "id":3,
+    "name":"sony",
+    "price":"109990$"
+  },
+  {
+    "id":4,
+    "name":"nokia",
+    "price":"102310$"
+  }
+]

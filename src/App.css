@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+.black {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,14 @@
+{
+  "users":[
+      {"id":72,"name":"Vlad Korochanskiy"},
+      {"id":13,"name":"Dasha Ivasenko"},
+      {"id":12,"name":"inna Korochanskaya"},
+      {"id":22,"name":"inna Korochanskaya"}
+    ],
+  "messages":[
+    {"id":1, "text":"Hello","userId":72},
+    {"id":2,"text":"Bye","userId":13},
+    {"id":3,"text":"What are you doing","userId":12},
+    {"id":22,"text":"What are you doing","userId":12}
+  ]
+}

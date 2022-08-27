@@ -1,0 +1,13 @@
+@import '../../common/style/temlate';
+
+.container{
+margin: 20px;
+height: 40vh;
+}
+
+.Light{
+  @extend %light
+}
+.dark{
+  @extend %dark
+}

@@ -1,0 +1,33 @@
+$width:300px;
+
+.nav{
+  width: $width;
+
+  position: fixed;
+  left: -$width;
+  // left:0;
+  top:0;
+  bottom: 0;
+
+  background-color: teal;
+  color:white;
+  transition: left 700ms;
+  .close_btn{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+  }
+  ul{
+    list-style: none;
+    padding: 20px ;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    color:inherit;
+    padding: 10px 0;
+  }
+}
+.open{
+  left:0;
+}
